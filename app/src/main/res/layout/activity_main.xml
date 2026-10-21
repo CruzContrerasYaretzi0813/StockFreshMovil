@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- FondoFrutas -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondofrutas" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- Header -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/degradadoheader">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stock &amp; Fresh"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+
+        <!-- Imagen central -->
+        <ImageView
+            android:id="@+id/imgCenter"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:contentDescription="Bolsa de compras"
+            />
+
+        <!-- Título de bienvenida -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="¡Bienvenido a Stock &amp; Fresh!"
+            android:textColor="#d5676e"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <!-- Texto Bienvenida -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:gravity="center"
+            android:text="Organiza tu comida, evita desperdicios y descubre qué cocinar hoy con lo que ya tienes en casa."
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <!-- Botón Registrarse -->
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#d5676e"
+            android:text="Registrarse"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="28dp" />
+
+        <!-- Botón Iniciar Sesión -->
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#d5676e"
+            android:text="Inicia Sesión"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="28dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
